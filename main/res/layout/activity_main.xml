@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/stname"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+    <EditText
+        android:textSize="24sp"
+        android:id="@+id/stpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:textSize="24sp"
+        android:id="@+id/stemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/stphone"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        />
+
+    <EditText
+        android:id="@+id/stdbod"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date of Birth (DD/MM/YYYY)" />
+    <EditText
+        android:id="@+id/stdage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="Enter Age"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Gender ?"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/gender_radiogroup"
+        android:tooltipText="Membership type">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="false"
+            android:textSize="24sp"/>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="24sp"/>
+    </RadioGroup>
+    <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and accepted the rules for Membership"
+            android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/llogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:text="Login" />
+    </LinearLayout>
+
+
+</LinearLayout>
